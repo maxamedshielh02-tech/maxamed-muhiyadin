@@ -1,100 +1,83 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: #7b72b9; 
-    padding: 40px;
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.container {
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-}
-
-.header {
-    background-color: #b5c73c; 
-    padding: 15px;
+header {
+    background-color: #a3d95d;
+    color: #333333;
     text-align: center;
-    padding-right: 50px;
-}
-
-.header h1 {
-    color: #333;
+    padding: 20px;
     font-size: 24px;
 }
 
-
-.main-layout {
+.wrapper {
     display: flex;
-    min-height: 300px;
+    flex: 1;
 }
 
-.sidebar {
-    background-color: #cf4619;
-    width: 25%;
-    padding: 20px;
-   
-
+.nav {
+    background-color: #e67e43;
+    width: 180px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.sidebar ul {
-    list-style: none;
-
-}
-
-.sidebar ul li {
-    margin-bottom: 15px;
-}
-
-.sidebar ul li a {
-    color: #611e14; 
+.nav a {
+    color: #4a6fa5;
     text-decoration: none;
-    font-weight: bold;
-    color: white;   
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
-  .sidebar ul li :hover{
-    background-color: #1616d3;
+
+.nav a:hover {
+    color: rgb(51, 215, 9);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main {
+    background-color: #e36b7c;
     color: white;
-    padding: 10px;
-
- }
-.content {
-    background-color: #b75344;
-    width: 75%;
-    padding: 30px;
-    color: #ffffff;
+    flex: 1;
+    padding: 40px;
 }
 
-.content h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+main h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
-.content p {
-    font-size: 16px;
+main p {
+    font-size: 18px;
     margin-bottom: 15px;
+    opacity: 0.9;
 }
 
-.footer {
-    background-color: #1616d3; 
-    padding: 15px;
-    text-align: left;
-    padding-left: 20px;
-    
+footer {
+    background-color: #f5e505;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
 }
 
-.footer p {
-    color: #333333; 
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
+.bottom-bar {
+    background-color: #d97d38;
+    height: 60px;
+    width: 100%;
 }
