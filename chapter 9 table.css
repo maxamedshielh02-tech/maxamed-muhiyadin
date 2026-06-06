@@ -1,0 +1,38 @@
+body{
+    background-color: #f9fafc;
+    padding: 30px;
+    font-family: serif;
+}
+table{
+    width: 80%; 
+    border-collapse: collapse;
+    margin: auto;
+    border:1px solid #ddd ;
+    background-color:bisque ;
+    box-shadow: 2px 2px 2px #ecbaba;
+}
+caption{
+    caption-side: top;
+    text-align: center;
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+th{
+    background-color:cornflowerblue ;
+    color: white;
+    text-decoration: none;
+}
+tr,th{
+    padding: 12px 6px;
+    text-align: center;
+    border-bottom: 1px solid #ccd;
+}
+tr:hover{
+    background-color: #ecbaba;
+}
+td:hover{
+    background-color: blueviolet;
+    color: white;
+}
